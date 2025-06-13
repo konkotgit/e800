@@ -1,55 +1,88 @@
-# E800
+# E800  
 ## Klon komputera Elwro 800 Junior
 
-Komputer powstał na bazie implementacji opracowanej przez Nietoperza z forum speccy.pl
-E800 pozwala na uruchomienie trzech różnych maszyn
+E800 to współczesny klon komputera Elwro 800 Junior, oparty na implementacji opracowanej przez Nietoperza z forum [speccy.pl](https://speccy.pl). Komputer umożliwia uruchomienie trzech różnych maszyn:
 
-* Elwro 800-3 Junior
-* Elwro 804 Junior PC
-* ZX Spectrum 48
+- **Elwro 800-3 Junior**
+- **Elwro 804 Junior PC**
+- **ZX Spectrum 48**
 
-## Specyfikacja:
-* Procesor Z80
-* Pamięć ROM
-* Pamięć RAM
-* Wyjścia video: RGB, Kompozyt, S-Video
-* Gniazdo EAR/MIC jack 3,5mm
-* Gniazdo wyjścia dzwięku jack 3,5mm
-* Gniazdo PS/2 dla klawiatury
-* Wbudowany AY-3-8910
-* Wbudowany kontroler stacji dyskietek
-* Gniazdo joysticka w standardzie Kempston
+---
 
-## Wyjście video RGB
-Wyjście RGB używa 9 pinowego złącza minidin. Pinout jest zgodny z kablem do SEGA Genesis2 i Mega Drive 2
+## Specyfikacja
 
-## Zasilacz
-Do zasilania proponuję użyć dobrej jakości zasilacza o napięciu pomiędzy 9 - 12v i wydajności prądowej min 3A.
+- **Procesor:** Z80  
+- **Pamięć ROM:** z możliwością przełączania wsadów  
+- **Pamięć RAM**  
+- **Wyjścia wideo:** RGB, kompozyt, S-Video  
+- **Audio:**  
+  - EAR/MIC – jack 3,5 mm  
+  - Wyjście audio – jack 3,5 mm  
+- **Klawiatura:** PS/2 lub mechaniczna (Cherry MX 5-pin)  
+- **Układ dźwiękowy:** AY-3-8910  
+- **Kontroler FDD:** WD37C65B (GM82C765B)  
+- **Joystick:** w standardzie Kempston  
+
+---
+
+## Wyjście wideo RGB
+
+Wyjście RGB wykorzystuje 9-pinowe złącze Mini-DIN. Pinout jest zgodny z kablami SEGA Genesis 2 / Mega Drive 2.
+
+---
+
+## Zasilanie
+
+Zalecany zasilacz:  
+- Napięcie: 9–12 V  
+- Prąd: minimum 3 A  
+- Dobra jakość zasilacza jest kluczowa dla stabilnego działania
+
+---
 
 ## Bluetooth
-Na płycie głównej znajduje się miejsce na wpięcie modułu bluetooth MH-M18 umożliwiającego wczytywanie programów z PC lub smartfonów.
+
+Na płycie głównej znajduje się złącze do montażu modułu **Bluetooth MH-M18**. Umożliwia on ładowanie programów z komputera PC lub smartfona.
+
+---
 
 ## ROM
-W komputerze za pomocą zworki J14 mamy możliwość przełączenia pomiędzy dwoma róznymi wsadami pamięci ROM.
+
+Za pomocą zworki **J14** można przełączać się między dwoma wsadami ROM.
+
+---
 
 ## Junet
-Klon nie ma zaimplementowanej obsługi sieci Junet
+
+Ten klon nie obsługuje sieci **Junet**.
+
+---
 
 ## Stacja dyskietek
-Kontroler stacji dyskietek oparty jest na układzie WD37C65B (GM82C765B)
-Standardową stację dyskietek od PC podłączamy kablem prostym bez przeplotu.
-Oczywiście działa też bez problemów z gotekiem.
 
-Uwaga
-Zastosowany w E800 kontroler stacji dyskietek WD37C65B zgodnie z wszelakimi datasheet powinien być zgodny z Intel 8272 który był stosowany oryginalnie w Juniorze.
-Jak się okazuje to jest prawie zgodny. Działa odczyt i zapis dyskietek natomiast na tą chwilę nie działa formatowanie. 
+- Kontroler: **WD37C65B**  (GM82C765B)
+- Obsługuje standardowe stacje dyskietek PC (bez przeplotu)
+- Gotek działa poprawnie
+
+**Uwaga:**  
+Na ten moment **formatowanie dyskietek nie działa**, choć odczyt i zapis funkcjonują poprawnie.
+
+---
 
 ## Klawiatura
-Klawiatura oprata jest na przełącznikach typu Cherry MX. Klawiatra z płytą główną połączona jest za pomocą 20 pinowej taśmy ICD.
-W klawiaturze montujemy kątowe złącze ICD. 
-W E800 można użyć klawiatury mechanicznej lub PS/2
-Klawiatura PS/2 wymaga odpowiedniego firmware w CPLD i zaprogramowanego układu Attiny.
 
-## Elwro 804 Junior PC
-Elwro 804 Junior PC startując będzie próbował wczytać z dyskietki system CP/J.
-Aby uruchomić komputer w trybie BASIC należy przytrzymać klawisz B przy resecie lub przy włączaniu zasilania.
+- Wersja mechaniczna oparta na przełącznikach Cherry MX (5-pin)
+- Połączenie przez taśmę 20-pin IDC (kątowe złącze w klawiaturze)
+- Możliwość użycia klawiatury **PS/2** — wymaga odpowiedniego firmware'u w **CPLD** i zaprogramowanego układu **Attiny**
+
+---
+
+## Tryb Elwro 804 Junior PC
+
+Po uruchomieniu w trybie **804**, komputer próbuje wczytać z dyskietki system **CP/J**.
+
+Aby uruchomić komputer w trybie **BASIC**, przytrzymaj klawisz **B** podczas włączania zasilania lub resetu.
+
+![E800 Picture 1](/photos/e800_1_s.jpg)
+
+![E800 Picture 2](/photos/e800_25_s.jpg)
