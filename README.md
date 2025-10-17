@@ -46,6 +46,14 @@ Na płycie głównej znajduje się złącze do montażu modułu **Bluetooth MH-M
 
 ---
 
+## EAR/MIC
+
+Uwaga! W przypadku problemów z wczytywaniem programów z taśmy należy odwrócić tranzystor Q1 BC517.
+Występują z dwoma rodzajami wyprowadzeń CBE lub EBC.
+
+---
+
+
 ## ROM
 
 Za pomocą zworki **J14** można przełączać się między dwoma wsadami ROM.
